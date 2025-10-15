@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, $color-primary-light-op, $color-primary-dark-op), url(../images/hero.jpg);
+    height: 90vh;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    position: relative;
+    
+
+
+    .logo{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        display: inline-block;
+        width: 75px;
+
+
+        img{
+            width: 100%;
+        }
+    }
+    &-text-box{
+        text-transform: uppercase;
+        color: $color-white;
+    }
+
+    &-pri{
+        font-size: 60px;
+        font-weight: 200;
+        letter-spacing: 25px;
+        animation: moveLR 1s ease-in-out;
+    }
+    &-sec{
+        font-size: 20px;
+        letter-spacing: 15px;
+        animation: moveRL 1s ease-in-out;
+        margin-bottom: 50px;
+    }
+}
